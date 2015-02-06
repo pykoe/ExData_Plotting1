@@ -37,8 +37,8 @@ library(data.table)
 
 library(dplyr)
 
+#### classic version 
 # na value is "?"
-
 # data <- read.csv(fn, sep = ";", na.strings = "?")
 # data <- tbl_df(data)
 
@@ -46,7 +46,8 @@ library(dplyr)
 # end <- as.Date("2007-02-02", "%Y-%m-%d")
 # ff <- filter(data, Date >= begin & Date <= end)
 
-# read only data from the dates 2007-02-01 and 2007-02-02
+
+#### read only data from the dates 2007-02-01 and 2007-02-02
 library(sqldf)
 ff <- read.csv.sql(fn, sql = 'select * from file where Date="1/2/2007" OR Date="2/2/2007"', header = T, sep = ";")
 

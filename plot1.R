@@ -3,6 +3,7 @@
 
 # plot 1
 # Construct the plot and save it to a PNG file with a width of 480 pixels and a height of 480 pixels.
+
 png(filename = "plot1.png",
     width = 480, height = 480, units = "px", bg = "transparent")
 
