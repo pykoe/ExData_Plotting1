@@ -4,7 +4,7 @@
 # plot 3
 # Construct the plot and save it to a PNG file with a width of 480 pixels and a height of 480 pixels.
 png(filename = "plot3.png",
-    width = 480, height = 480, units = "px")
+    width = 480, height = 480, units = "px", bg = "transparent")
 energySubMetering <- "Energy sub metering"
 
 with (ff, plot(completeDate, Sub_metering_1, type="n", xlab="", ylab = energySubMetering))
